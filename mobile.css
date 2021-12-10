@@ -1,9 +1,9 @@
+/* this breakpoint work with Samsung M21 */
 @media (max-width:600px){
 
 .badge{
     width: 48%;
     height: 15%;
-
 }
 .cover{
     width:36%;
