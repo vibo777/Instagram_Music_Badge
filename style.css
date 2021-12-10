@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+} 
+ 
+.main{
+    height: 500px;
+    width: 100%;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.badge{
+    width: 17%;
+    height: 70px;
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+}
+/* .image{
+    height: 100%;
+    width: 100%;
+} */
+.cover{
+    display: inline-block;
+    height: 84%;
+    width: 28%;
+    background-color: black;
+    border-radius: 6px;
+    margin: 6px 6px;
+}
+.details{
+    height: 90%;
+    width: 72%;
+    /* background-color: magenta; */
+    margin: 16px 5px;
+}
+.details .title{
+    font-family: 'Lato', sans-serif;
+    margin-top: 2px;
+}
+.head{
+    font-weight: bold;
+}
+.sub{
+    color: gray;
+}
+.overlay{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    /* position: absolute; */
+    inset: 0 0 0 0;
+}
+.bar{
+    height: 24px;
+    width: 5px;
+    background-color: white;
+    border-radius: 3px;
+    margin: 3px;
+}
+.bar{
+    animation: bar 1400ms infinite; 
+}
+
+@keyframes bar{
+
+    0%   {height: 10px;}
+    50%  {height:24px;}
+    100% {height: 10px;}
+
+}
+
+.bar:nth-child(even){
+
+    animation-delay: 700ms;
+}
